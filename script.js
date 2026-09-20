@@ -364,7 +364,10 @@ function drawBackgroundSky() {
   ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
   // Draw stars
-  if (settings.mode === "dark") {
+  if (settings.mode === "dark") { if (settings.mode === "dark") {
+  gradient.addColorStop(1, "#27507F");
+  gradient.addColorStop(0, "#58A8D8");
+}
     ctx.fillStyle = "white";
     state.stars.forEach((star) => {
       ctx.fillRect(star.x, star.y, 1, 1);
