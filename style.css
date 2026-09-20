@@ -19,7 +19,7 @@ body {
 button {
   cursor: pointer;
   border: none;
-  color: white;
+  color: red;
   background: transparent;
   font-family: "Inconsolata", monospace;
   padding: 10px;
